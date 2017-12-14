@@ -53,9 +53,7 @@ public class Main extends SimpleApplication {
         app.start();
     }
     
-    
-
- 
+     
     @Override
     public void simpleInitApp() {
         flyCam.setDragToRotate(true);
@@ -296,6 +294,8 @@ public class Main extends SimpleApplication {
        rightLegDownNode.rotate(tpf,tpf,0);
        leftLegUpNode.rotate(0,tpf,-tpf);
        leftLegDownNode.rotate(tpf,tpf,0);
+       headNode.rotate(tpf,0,tpf);
+       bodyNode.rotate(0,tpf,0);
 
     }
 
